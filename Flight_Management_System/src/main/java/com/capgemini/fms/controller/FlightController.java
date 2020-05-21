@@ -92,7 +92,7 @@ public class FlightController {
 		}
 	}
 	@CrossOrigin
-	@GetMapping("/getflightdetails/{flightNumber")
+	@GetMapping("/view-by-id/{flightNumber}")
 	public Optional<Flight> flightdetails(@PathVariable Integer flightNumber) throws FlightException{
 		try {
 			return flightservice.flightdetails(flightNumber);
